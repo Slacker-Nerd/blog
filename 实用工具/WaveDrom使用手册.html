@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WaveDrom 使用手册 | 电子摆烂仔</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="我的个人博客">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.d706b6c5.css" as="style"><link rel="preload" href="/blog/assets/js/app.17599057.js" as="script"><link rel="preload" href="/blog/assets/js/2.81c34002.js" as="script"><link rel="preload" href="/blog/assets/js/1.4844e13f.js" as="script"><link rel="preload" href="/blog/assets/js/32.411f5384.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.3855f2a7.js"><link rel="prefetch" href="/blog/assets/js/11.532fb960.js"><link rel="prefetch" href="/blog/assets/js/12.9b03ab98.js"><link rel="prefetch" href="/blog/assets/js/13.d9bc12e0.js"><link rel="prefetch" href="/blog/assets/js/14.c1e18cc4.js"><link rel="prefetch" href="/blog/assets/js/15.fbba562b.js"><link rel="prefetch" href="/blog/assets/js/16.4574fd2a.js"><link rel="prefetch" href="/blog/assets/js/17.9e69dfdb.js"><link rel="prefetch" href="/blog/assets/js/18.99e6bfc2.js"><link rel="prefetch" href="/blog/assets/js/19.58d0e401.js"><link rel="prefetch" href="/blog/assets/js/20.0795a904.js"><link rel="prefetch" href="/blog/assets/js/21.4d2eb33f.js"><link rel="prefetch" href="/blog/assets/js/22.443691a9.js"><link rel="prefetch" href="/blog/assets/js/23.a715e803.js"><link rel="prefetch" href="/blog/assets/js/24.552660b4.js"><link rel="prefetch" href="/blog/assets/js/25.50b1876d.js"><link rel="prefetch" href="/blog/assets/js/26.996c4010.js"><link rel="prefetch" href="/blog/assets/js/27.ab1555ae.js"><link rel="prefetch" href="/blog/assets/js/28.8e97fd12.js"><link rel="prefetch" href="/blog/assets/js/29.2d299fcc.js"><link rel="prefetch" href="/blog/assets/js/3.244f0799.js"><link rel="prefetch" href="/blog/assets/js/30.64425353.js"><link rel="prefetch" href="/blog/assets/js/31.e5d87e5a.js"><link rel="prefetch" href="/blog/assets/js/33.2935529e.js"><link rel="prefetch" href="/blog/assets/js/34.660bcce6.js"><link rel="prefetch" href="/blog/assets/js/35.1aef93a6.js"><link rel="prefetch" href="/blog/assets/js/36.c38e782b.js"><link rel="prefetch" href="/blog/assets/js/4.db06a48d.js"><link rel="prefetch" href="/blog/assets/js/5.caca6451.js"><link rel="prefetch" href="/blog/assets/js/6.963cb6f5.js"><link rel="prefetch" href="/blog/assets/js/7.f5c742a4.js"><link rel="prefetch" href="/blog/assets/js/vendors~docsearch.cc58001a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.d706b6c5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/assets/img/logo.png" alt="电子摆烂仔" class="logo"> <span class="site-name can-hide">电子摆烂仔</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.cnblogs.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客园
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://oshwhub.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  嘉立创开源硬件平台
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.csdn.net/?spm=1018.2226.3001.4476" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSND网站
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.cnblogs.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客园
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://oshwhub.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  嘉立创开源硬件平台
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.csdn.net/?spm=1018.2226.3001.4476" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSND网站
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/blog/实用工具/" class="sidebar-heading clickable open"><span>实用工具</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/实用工具/Typoro使用手册.html" class="sidebar-link">Typoro使用手册</a></li><li><a href="/blog/实用工具/WaveDrom使用手册.html" class="active sidebar-link">WaveDrom使用手册</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/实用工具/WaveDrom使用手册.html#一、使用途径" class="sidebar-link">一、使用途径</a></li><li class="sidebar-sub-header"><a href="/blog/实用工具/WaveDrom使用手册.html#二、使用方法" class="sidebar-link">二、使用方法</a></li><li class="sidebar-sub-header"><a href="/blog/实用工具/WaveDrom使用手册.html#三、案例分析" class="sidebar-link">三、案例分析</a></li><li class="sidebar-sub-header"><a href="/blog/实用工具/WaveDrom使用手册.html#相关链接" class="sidebar-link">相关链接</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="wavedrom-使用手册"><a href="#wavedrom-使用手册" class="header-anchor">#</a> WaveDrom 使用手册</h1> <h2 id="一、使用途径"><a href="#一、使用途径" class="header-anchor">#</a> 一、使用途径</h2> <h3 id="_1、在线模式"><a href="#_1、在线模式" class="header-anchor">#</a> 1、在线模式</h3> <p>官网地址：<a href="https://wavedrom.com/" target="_blank" rel="noopener noreferrer">WaveDrom - Digital timing diagram everywhere<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>在官网点击左上角的“Editor”即可使用</p> <h3 id="_2、离线模式"><a href="#_2、离线模式" class="header-anchor">#</a> 2、离线模式</h3> <p>在官网点击左下角的“Download editor”即可打开下载界面，选择自己系统对应的版本就可以啦（注意，需科学上网）</p> <h3 id="_3、插件模式"><a href="#_3、插件模式" class="header-anchor">#</a> 3、插件模式</h3> <p><strong>WaveDrom 插件介绍</strong></p> <p>在VScode应用商店中搜索Waveform Render，这个就相当于WaveDrom了：</p> <p>左边键入代码，右边会自动生成时序图，非常好用：</p> <p>第一次打开时，要先按ctrl+k, 再按ctrl + d才能自动生成时序图；先按ctrl+k, 再按ctrl + l能够实时刷新.</p> <h2 id="二、使用方法"><a href="#二、使用方法" class="header-anchor">#</a> 二、使用方法</h2> <p><img src="/blog/assets/img/WaveDrom/%E8%A1%A8%E6%A0%BC%E4%B8%80.png" alt="img"></p> <p><img src="/blog/assets/img/WaveDrom/%E8%A1%A8%E6%A0%BC%E4%BA%8C.png" alt="img"></p> <h3 id="_1、基本格式"><a href="#_1、基本格式" class="header-anchor">#</a> 1、基本格式</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;signal&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;信号的名字&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;信号的特征&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_2、绘图教程"><a href="#_2、绘图教程" class="header-anchor">#</a> 2、绘图教程</h3> <h4 id="_2-1-创建信号-signal"><a href="#_2-1-创建信号-signal" class="header-anchor">#</a> 2.1 创建信号（Signal）</h4> <p>下面的代码创建了一个名为“Alfa”的信号，“signal”关键字创建了一系列信号，“name”定义了信号名称，“wave”定义了信号波形，其中的每一个字符都表示了一个时间段的信号类型。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;signal&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Alfa&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;01.zx=ud.23.456789&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/blog/assets/img/WaveDrom/%E5%88%9B%E5%BB%BA%E4%BF%A1%E5%8F%B7.png" alt="img"></p> <h4 id="_2-2-添加时钟-adding-clock"><a href="#_2-2-添加时钟-adding-clock" class="header-anchor">#</a> 2.2 添加时钟（Adding Clock）</h4> <p>时钟信号是一种比较特殊的信号，其只有高低电平两种状态。提供了可选的标志来控制是否展示出上升/下降沿。同时，可以与其他信号同时使用，用来实现类似门控时钟的绘制。</p> <p>注意时钟的h和l与信号的1和0是不同的（变化沿的角度不同）。</p> <p>下面代码实现了可供参考的时钟样式。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;signal&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pclk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;p.......&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Pclk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;P.......&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;nclk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;n.......&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Nclk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;N.......&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;clk0&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;phnlPHNL&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;clk1&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xhlhLHl.&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;clk2&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;hpHplnLn&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;clk3&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;nhNhplPl&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;clk4&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xlh.L.Hx&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/blog/assets/img/WaveDrom/%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%92%9F.png" alt="img"></p> <h4 id="_2-3-将时钟与信号结合-putting-all-together"><a href="#_2-3-将时钟与信号结合-putting-all-together" class="header-anchor">#</a> 2.3 将时钟与信号结合（Putting all together）</h4> <p>我们在绘制时序图时，通常需要将时钟与信号放在一起，为了方便查看这两者之间的关系。不仅仅可以直接将时钟与信号结合，同时可以将你想添加的文字或数据名称，利用关键字“data”以标签的形式放入部分符号中，以表示总线的值。值是按先后顺序添加到“23456789=”这些符号中的。</p> <p>下面的代码给出了使用的例子。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;signal&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;clk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;P......&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bus&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;x.==.=x&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;head&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;body&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;tail&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;data&quot;</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;wire&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.1..0.&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/blog/assets/img/WaveDrom/%E5%B0%86%E6%97%B6%E9%92%9F%E4%B8%8E%E4%BF%A1%E5%8F%B7%E7%BB%93%E5%90%88.png" alt="img"></p> <h4 id="_2-4-添加间隙-spacers-and-gaps"><a href="#_2-4-添加间隙-spacers-and-gaps" class="header-anchor">#</a> 2.4 添加间隙（Spacers and Gaps）</h4> <p>在时序图中，有时需要对时钟和信号进行省略，这就需要添加间隙省略掉不需要的部分。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;signal&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;clk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;p.....|...&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;data&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;x.345x|=.x&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;head&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;body&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;tail&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;data&quot;</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Request&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.1..0|1.0&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Acknowledge&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.....|01.&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/blog/assets/img/WaveDrom/%E6%B7%BB%E5%8A%A0%E9%97%B4%E9%9A%99.png" alt="img"></p> <h4 id="_2-5-为信号分组-the-groups"><a href="#_2-5-为信号分组-the-groups" class="header-anchor">#</a> 2.5 为信号分组（The groups）</h4> <p>通过分组，可以更好地展示信号之间的层级关系，便于查阅和对比。使用&quot;[ ]&quot;,可以实现对信号的分组，分组的名称可以选择性添加。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;signal&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;clk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;p..Pp..P&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span>
+            <span class="token string">&quot;Master&quot;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;ctrl&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;write&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;01.0....&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;read&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0...1..0&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;addr&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;x3.x4..x&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;A1 A2&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;wdata&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;x3.x....&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;D1&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span>
+            <span class="token string">&quot;Slave&quot;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;ctrl&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ack&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;x01x0.1x&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rdata&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;x.....4x&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Q2&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/blog/assets/img/WaveDrom/%E4%B8%BA%E4%BF%A1%E5%8F%B7%E5%88%86%E7%BB%84.png" alt="img"></p> <h4 id="_2-6-周期与相位-period-and-phase"><a href="#_2-6-周期与相位-period-and-phase" class="header-anchor">#</a> 2.6 周期与相位（Period and Phase）</h4> <p>周期和相位是时序图中重要的属性，可以通过关键字“period”与“phase”来进行编辑修改。</p> <p>注意period仅支持整数；phase支持整数与小数，且相位的单位1是指一个时段。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;signal&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CK&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;P.......&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;period&quot;</span><span class="token operator">:</span> <span class="token number">2</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CMD&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;x.3x=x4x=x=x=x=x&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;RAS NOP CAS NOP NOP NOP NOP&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;phase&quot;</span><span class="token operator">:</span> <span class="token number">0.5</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ADDR&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;x.=x..=x........&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ROW COL&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;phase&quot;</span><span class="token operator">:</span> <span class="token number">0.5</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;DQS&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;z.......0.1010z.&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;DQ&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;z.........5555z.&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;D0 D1 D2 D3&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/blog/assets/img/WaveDrom/%E5%91%A8%E6%9C%9F%E4%B8%8E%E7%9B%B8%E4%BD%8D.png" alt="img"></p> <h4 id="_2-7-其他属性配置-the-config-property"><a href="#_2-7-其他属性配置-the-config-property" class="header-anchor">#</a> 2.7 其他属性配置（The config{} property）</h4> <p>属性配置可以修改图像很多地方，增加绘图的灵活性，利用关键字“config”来对属性进行控制。</p> <p><strong>2.7.1 水平比例（hscale）</strong>
+水平比例修改的是整幅图的水平宽度，直观理解为单位时段的绘图长度。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;signal&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;clk&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;p....&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;data&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;x345x&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;head&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;body&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;tail&quot;</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Request&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;01..0&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;config&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;hscale&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/blog/assets/img/WaveDrom/%E6%B0%B4%E5%B9%B3%E6%AF%94%E4%BE%8B1.png" alt="img"></p> <p>当修改config: { hscale: 2 }时：</p> <p>![img](/blog/assets/img/WaveDrom/2.7.1 水平比例2.png)</p> <p><strong>2.7.2 主题样式（skin）</strong>
+通过“skin”关键字，可以修改图的整体主题样式。在离线版v2.9.1版本中提供了四种可选的参数“default”、“dark”、“lowkey”、“narrow”；在线版目前提供了两种可选参数“default”、“narrow”。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;signal&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;clk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;p....&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;data&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;x345x&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;head&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;body&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;tail&quot;</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Request&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;01..0&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;config&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;hscale&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;skin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lowkey&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/blog/assets/img/WaveDrom/%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F.png" alt="img"></p> <p><strong>2.7.3 头尾标注（head/foot）</strong></p> <p>关键字“head”与“foot”，可以通过头尾标注来对整幅图进行标注，包括text（标题文本）、tick（与垂直标记对其的标签）、tock（垂直标记之间的标签）、every（每N个周期显示一个标签）。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;signal&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;clk&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;p....&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;data&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;x345x&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;a b c&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Request&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;01..0&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;head&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;WaveDrom example&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tick&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;every&quot;</span><span class="token operator">:</span> <span class="token number">2</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;foot&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Figure 100&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tock&quot;</span><span class="token operator">:</span> <span class="token number">9</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/blog/assets/img/WaveDrom/%E5%A4%B4%E5%B0%BE%E6%A0%87%E6%B3%A8.png" alt="img"></p> <p><strong>text</strong></p> <p>text具有SVG文本的所有属性，可以通过“tspan”关键字对其属性进行修改，可以使用预定义的字体样式（包括下面表格中的类型，可以组合出需要的字体与颜色）、也可以使用SVG tspan的其他属性构成自由样式。</p> <p>SVG tspan其他属性配置可以参考：<a href="https://developer.mozilla.org/zh-CN/docs/Web/SVG/Element/tspan" target="_blank" rel="noopener noreferrer">tspan - SVG | MDN (mozilla.org)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;signal&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;clk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;p.....PPPPp....&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dat&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;x....2345x.....&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;a b c d&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;req&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0....1...0.....&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;head&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;class&quot;</span><span class="token operator">:</span> <span class="token string">&quot;error h1&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;error &quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;class&quot;</span><span class="token operator">:</span> <span class="token string">&quot;warning h2&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;warning &quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;class&quot;</span><span class="token operator">:</span> <span class="token string">&quot;info h3&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;info &quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;class&quot;</span><span class="token operator">:</span> <span class="token string">&quot;success h4&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;success &quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;class&quot;</span><span class="token operator">:</span> <span class="token string">&quot;muted h5&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;muted &quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;class&quot;</span><span class="token operator">:</span> <span class="token string">&quot;h6&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;h6 &quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;default &quot;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;fill&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pink&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;font-weight&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bold&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;font-style&quot;</span><span class="token operator">:</span> <span class="token string">&quot;italic&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;pink-bold-italic&quot;</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;foot&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;E=mc&quot;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;dy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;-5&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;2&quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;dy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;. &quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;font-size&quot;</span><span class="token operator">:</span> <span class="token string">&quot;25&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;B &quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;text-decoration&quot;</span><span class="token operator">:</span> <span class="token string">&quot;overline&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;over &quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;text-decoration&quot;</span><span class="token operator">:</span> <span class="token string">&quot;underline&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;under &quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;baseline-shift&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sub&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;sub &quot;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span>
+                <span class="token string">&quot;tspan&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;baseline-shift&quot;</span><span class="token operator">:</span> <span class="token string">&quot;super&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;super &quot;</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;tock&quot;</span><span class="token operator">:</span> <span class="token number">-5</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/blog/assets/img/WaveDrom/%E5%A4%B4%E5%B0%BE%E6%A0%87%E6%B3%A82.png" alt="img"></p> <h4 id="_2-8-标注箭头与线条-arrows"><a href="#_2-8-标注箭头与线条-arrows" class="header-anchor">#</a> 2.8 标注箭头与线条（Arrows）</h4> <p>有时需要对时序图进行连接与标注，WaveDrom提供了相对应的实现。利用“edge”关键字，可以实现包括“曲线”与“折线”，同时都提供了有向与无向的配置方式；“折线”中提供了一种平角式箭头样式，便于对时间段长度进行标注。</p> <p>共有三种线的类型，可以在使用中体会：</p> <table><thead><tr><th>符号</th> <th>曲线类型</th></tr></thead> <tbody><tr><td>~</td> <td>S型曲线</td></tr> <tr><td>-与~组合</td> <td>弧线</td></tr> <tr><td>-或</td> <td>直线</td></tr></tbody></table> <p>提供一个小tips：可能会认为连线只能是蓝色的，但是其实可以通过错误的语法，来实现红色连接线的绘制（但是均为无向）。</p> <p><strong>2.8.1 曲线（Splines）</strong></p> <p>下面的代码展示了曲线连接的案例，可以看到首先利用“node”关键字定义了需要连接的点，之后使用“edge”关键字对这些点进行了连接，通过使用不同的连接符号，可以实现不同的连接效果。</p> <p>下面的代码给出了一个简单的使用案例。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;signal&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;A&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;01........0....&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;node&quot;</span><span class="token operator">:</span> <span class="token string">&quot;.a........j&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;B&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.1.......0.1..&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;node&quot;</span><span class="token operator">:</span> <span class="token string">&quot;..b.......i&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0..1....0...1..&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;node&quot;</span><span class="token operator">:</span> <span class="token string">&quot;...c....h..&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;D&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0...1..0.....1.&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;node&quot;</span><span class="token operator">:</span> <span class="token string">&quot;....d..g...&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;E&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0....10.......1&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;node&quot;</span><span class="token operator">:</span> <span class="token string">&quot;.....ef....&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;edge&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;a~b t1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;c-~a t2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;c-~&gt;d time 3&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;d~-e&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;e~&gt;f&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;f-&gt;g&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;g-~&gt;h&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;h~&gt;i some text&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;h~-&gt;j&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/blog/assets/img/WaveDrom/%E6%9B%B2%E7%BA%BF.png" alt="img"></p> <p><strong>2.8.2 折线（Sharp lines）</strong></p> <p>下面的代码展示了折线连接的案例，可以看到首先利用“node”关键字定义了需要连接的点，之后使用“edge”关键字对他们进行了连接，通过使用不同的连接符号，可以实现不同的连接效果。</p> <p>下面的代码给出一个简单的使用案例。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;signal&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;A&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;01..0..&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;node&quot;</span><span class="token operator">:</span> <span class="token string">&quot;.a..e..&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;B&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.1..0.&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;node&quot;</span><span class="token operator">:</span> <span class="token string">&quot;..b..d.&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;phase&quot;</span><span class="token operator">:</span> <span class="token number">0.5</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0..1..0&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;node&quot;</span><span class="token operator">:</span> <span class="token string">&quot;...c..f&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;node&quot;</span><span class="token operator">:</span> <span class="token string">&quot;...g..h&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;node&quot;</span><span class="token operator">:</span> <span class="token string">&quot;...I..J&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;phase&quot;</span><span class="token operator">:</span> <span class="token number">0.5</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;D&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0..1..0&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;phase&quot;</span><span class="token operator">:</span> <span class="token number">0.5</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;edge&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;b-|a t1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;a-|c t2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;b-|-c t3&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;c-|-&gt;e t4&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;e-|&gt;f more text&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;e|-&gt;d t6&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;c-g&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;f-h&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;g&lt;-&gt;h 3 ms&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;I+J 5 ms&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/blog/assets/img/WaveDrom/%E6%8A%98%E7%BA%BF.png" alt="img"></p> <h3 id="_3、图像保存与导出"><a href="#_3、图像保存与导出" class="header-anchor">#</a> 3、图像保存与导出</h3> <p>WaveDrom提供了图像数据的保存以及导出方式，无论是离线版还是在线版，只需要点击右下角的“≡”按钮，即可找到。</p> <p><img src="/blog/assets/img/WaveDrom/%E5%9B%BE%E5%83%8F%E4%BF%9D%E5%AD%98%E4%B8%8E%E5%AF%BC%E5%87%BA.png" alt="img"></p> <p>分别介绍一下这几个按钮的功能：</p> <table><thead><tr><th>按钮</th> <th>功能</th></tr></thead> <tbody><tr><td>Load...</td> <td>读取存储的图形数据文件</td></tr> <tr><td>Save As...</td> <td>将当前的图形数据文件存储为json</td></tr> <tr><td>Export SVG...</td> <td>导出矢量图</td></tr> <tr><td>Export PNG...</td> <td>导出PNG图</td></tr> <tr><td>Rotate Layout...</td> <td>旋转代码区与绘图区</td></tr> <tr><td>Proportions</td> <td>修改代码区与绘图区比例</td></tr> <tr><td>Expand URL</td> <td>拓展网址</td></tr> <tr><td>WaveDrom Guide</td> <td>打开官方使用指导</td></tr> <tr><td>on GitHub</td> <td>打开GitHub项目官网</td></tr></tbody></table> <h2 id="三、案例分析"><a href="#三、案例分析" class="header-anchor">#</a> 三、案例分析</h2> <h2 id="相关链接"><a href="#相关链接" class="header-anchor">#</a> 相关链接</h2> <p><strong>官方资料</strong></p> <p>官方教程: https://wavedrom.com/tutorial.html</p> <p>官方网站: https://wavedrom.com</p> <p><strong>Reference</strong></p> <p>链接: https://reborn.blog.csdn.net/article/details/81368861.</p> <p>链接: https://blog.csdn.net/OnlyLove_/article/details/111770771.</p> <p><strong>CSDN教程</strong></p> <p><a href="https://blog.csdn.net/qq_42446721/article/details/121857435?fromshare=blogdetail&amp;sharetype=blogdetail&amp;sharerId=121857435&amp;sharerefer=PC&amp;sharesource=2302_76990333&amp;sharefrom=from_link" target="_blank" rel="noopener noreferrer">VScode中使用WaveDrom插件画时序图(波形图)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://blog.csdn.net/Alex497259/article/details/126307849?fromshare=blogdetail&amp;sharetype=blogdetail&amp;sharerId=126307849&amp;sharerefer=PC&amp;sharesource=2302_76990333&amp;sharefrom=from_link" target="_blank" rel="noopener noreferrer">Verilog：【7】超详细WaveDrom教程，时序图绘制利器，看这一篇就够了<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://reborn.blog.csdn.net/article/details/81368861?fromshare=blogdetail&amp;sharetype=blogdetail&amp;sharerId=81368861&amp;sharerefer=PC&amp;sharesource=2302_76990333&amp;sharefrom=from_link" target="_blank" rel="noopener noreferrer">对如何使用WaveDrom画波形图的研究（案例分解分析）<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/实用工具/Typoro使用手册.html" class="prev">
+        Typoro使用手册
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.17599057.js" defer></script><script src="/blog/assets/js/2.81c34002.js" defer></script><script src="/blog/assets/js/1.4844e13f.js" defer></script><script src="/blog/assets/js/32.411f5384.js" defer></script>
+  </body>
+</html>
